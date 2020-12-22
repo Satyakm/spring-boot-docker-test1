@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: demo-docker-client
+
+server:
+  port: 8501
+  
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8302/eureka/
+  instance:
+    hostname: localhost
